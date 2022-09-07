@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;900&display=swap" rel="stylesheet">
+	
+
+	<title>김지은_포트폴리오</title>
+
+	<style>
+	@import url("for_home.css");
+	 .workbody{
+			background: linear-gradient(to top, rgb(0, 0, 0, 0),rgba(255,255,255,0));
+			max-width: 1350px;
+			width: 100%;
+			height: 100px;
+			z-index:100;
+			margin: 0 auto;
+			position: fixed;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 0;
+		}
+		.me {
+			position: absolute; 
+			max-width: 1350px; 
+			width: 100%;
+			left: 50%;
+			transform: translate(-50%,-42px);
+			
+		}
+		
+		.frame{
+			max-width: 1350px;
+		}
+		
+		.section .slidelist .textbox2 {
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+			right: 0;
+			line-height: 2;
+			text-align: left;
+			font-family: 'Pretendard';
+			font-weight: 500;
+			transform: translate(-20%,-50%);
+			text-shadow: 3px 3px 3px rgba(0,0,0,0.1);;
+}
+		
+		/*반응형*/
+		@media (max-width: 500px){
+		.nameBT {position: fixed; z-index: 10; height:15px; left: 50%; top: 15px; left: 2vw; opacity: 0.5;}
+		.homeBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 13vw;transform: translateX(-190%);opacity: 0.3;}
+		.workBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 7vw; transform: translateX(-105%);opacity: 0.3;}
+		.cvBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 1vw; transform: translateX(0);opacity: 0.3;}
+		p.bignumF{font-family: 'Cinzel', serif;}
+			
+		
+		.section .slidelist .textbox2 {
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+			right: 0;
+			line-height: 1;
+			text-align: left;
+			font-family: 'Pretendard';
+			font-weight: 500;
+			transform: translate(-5%,-50%);
+		}
+		
+		.section .slidelist .textbox2 h2{
+			font-size: 30px;
+		}
+		.section .slidelist .textbox2 p{
+			font-size: 10px;
+		}
+
+		.bignumF{
+			font-size: 300px;
+			top: 45%; 
+			transform: translate(-48%, -47%);
+			letter-spacing: -15px;
+			padding : 15vh;
+		}
+	}
+		
+	</style>
+</head>
+<body>
+
+	<div>
+	<img src="work01BG.png" class="me">	
+		
+	</div>
+	
+	
+	<div>
+	<div class="workbody">
+				<div class="frame">
+	<div>
+		<a href="home.html">
+		<img src="./img/name.png" class="nameBT" >
+		</a>
+	</div>
+	
+	<div>
+		<a href="home.html">
+		<img src="./img/homeBT.png" class="homeBT">
+		</a>
+	</div>
+		</div>
+	<div>
+		<a href="work.html">
+		<img src="./img/workBT.png" class="workBT">
+		</a>
+	</div>	
+	<div>
+		<a href="cv.html" >
+		<img src="./img/resumeBT.png" class="cvBT">
+		</a>
+	</div>
+</div>
+
+	
+<div class="section">
+<div class="sectionBG"></div>
+	<input type="radio" name="slide" id="slide01" checked>
+	<input type="radio" name="slide" id="slide02">
+	<input type="radio" name="slide" id="slide03">
+	<input type="radio" name="slide" id="slide04">
+	
+	<li><label for="slide01"></label></li>
+	<li><label for="slide02"></label></li>
+	<li><label for="slide03"></label></li>
+	<li><label for="slide04"></label></li>
+	
+	<div class="slidewrap">
+		
+		<ul class="slidelist">
+			<!-- 슬라이드 영역 -->
+			<li class="slideitem">
+			
+				<a>
+					
+					<div class="textbox2">
+						<p class="textup" style="position: absolute; transform: translateY(-1000%);">프로젝트 규모 ㅣ 3인 </p>
+						<h2 class="title" onclick="location.href='work01.html';" > 집밖은 위험해</h2>
+						<p>전략, 모바일 게임</p>
+						<p class="textdown" style="position: absolute; transform: translateY(910%);">김지은 ㅣ 아트 팀장 </p>
+												
+					</div>
+					<div class="bignum">
+						<p class="bignumF">01</p> 
+					</div><!--
+					<div class="mainbox">
+						
+						<div class="textbox3">
+						<p style="font-weight: 200; opacity: 1; color: white;">맡은 역할</p><br>
+						<hr class="role" >
+							<p>
+							<br>
+							<p style="font-weight: 200; opacity: 1; color: white;">
+							Team Managing<br>
+							아트 디렉팅
+							<br>
+							인게임 - 애니메이팅</p>
+							<p style="font-weight: 200; opacity: 1; color: white;">시네마틱 영상</p>
+							<p style="font-weight: 200; opacity: 1; color: white;">펀딩 기획 및 제작
+							</p>
+							굿즈 디자인<br>
+							<p style="font-weight: 200; opacity: 1; color: white;">SNS 계정 관리</p>
+							SNS 컨첸츠 제작
+							</p>
+						</div>
+					
+					</div>-->
+					<img src="./img/work01BG7.png" onclick="location.href='work01.html';" >
+					
+					
+				</a>
+			</li>
+			
+			<!-- 슬라이드 내용 -->
+			<li class="slideitem">
+				<a>
+					
+					<div class="textbox2">
+						<p class="textup" style="position: absolute; transform: translateY(-1000%);">프로젝트 규모 ㅣ 4인 </p>
+						<h2 class="title2" style="transform: translateY(0)"
+							onclick="location.href='work02.html';" > PICOVID 2037</h2>
+						<p>미디어 인터렉션 전시</p>
+						<p class="textdown" style="position: absolute; transform: translateY(910%);">이화여자대학교 ㅣ 졸업전시 </p>
+												
+					</div>
+					<div class="bignum">
+						<p class="bignumF">02</p> 
+					</div>
+					<img src="./img/work02BG.png" onclick="location.href='work02.html';">
+				</a>
+			</li>
+			
+			
+			<li class="slideitem">
+				<a>
+					
+					<div class="textbox">
+						<h3>두번째 슬라이드</h3>
+						<p>두번째 슬라이드 입니다.</p>
+					</div>
+					<img src="./img/slide.jpg">
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					
+					<div class="textbox">
+						<h3>네번째 슬라이드</h3>
+						<p>네번째 슬라이드 입니다.</p>
+					</div>
+					<img src="./img/work02BG.png">
+				</a>
+			</li>
+			<!-- 좌,우 슬라이드 버튼 -->
+            <div class="slide-control">
+                <div>
+                    <label for="slide04" class="left" onclick="colorChangeFour()"></label>
+                    <label for="slide02" class="right" onclick="colorChangeTwo()"></label>
+                </div>
+                <div>
+                    <label for="slide01" class="left" onclick="colorChangeOne()"></label>
+                    <label for="slide03" class="right" onclick="colorChangeThree()"></label>
+                </div>
+                <div>
+                    <label for="slide02" class="left" onclick="colorChangeTwo()"></label>
+                    <label for="slide04" class="right" onclick="colorChangeFour()"></label>
+                </div>
+				<div>
+                    <label for="slide03" class="left" onclick="colorChangeThree()"></label>
+                    <label for="slide01" class="right" onclick="colorChangeOne()"></label>
+                </div>
+            </div>
+
+		</ul>
+	
+		<!-- 페이징 -->
+		<div class="slide-pagelistBG">
+		
+		<ul class="slide-pagelist">
+			
+			<li><label for="slide01" onclick="colorChangeOne()">01</label></li>
+            <li><label for="slide02" onclick="colorChangeTwo()">02</label></li>
+            <li><label for="slide03" onclick="colorChangeThree()">03</label></li>
+			<li><label for="slide04" onclick="colorChangeFour()">04</label></li>
+			
+		</ul>
+		</div>
+		
+	</div>
+
+	
+
+</div>
+
+</div>
+</body>
+	<!--
+	
+    <script type="text/javascript">
+    window.onload=function(){
+     colorChangeOne();
+    }
+
+    function colorChangeOne(){
+    var section = document.getElementsByClassName('section');
+    section[0].style.backgroundColor = '#AEAFB1';
+    }
+
+    function colorChangeTwo(){
+    var section = document.getElementsByClassName('section');
+    section[0].style.backgroundColor = 'yellow';
+    }
+
+    function colorChangeThree(){
+    var section = document.getElementsByClassName('section');
+    section[0].style.backgroundColor = 'green';
+    }
+		
+	function colorChangeFour(){
+    var section = document.getElementsByClassName('section');
+    section[0].style.backgroundColor = 'red';
+    }
+  	</script>
+	
+-->
+</html>
