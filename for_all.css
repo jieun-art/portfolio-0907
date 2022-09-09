@@ -27,27 +27,8 @@
 	background-color:  #6DB4FF; transition: none;
 	cursor:pointer;
 }
-.title:hover{
-	display:block;
-	background-color:  #6DB4FF; transition: none;
-	cursor:pointer;
-}
-
-.title{
-	font-weight: 100; 
-	font-family:  'Rix독립고딕_Pro Regular'
-}
 
 
-.title2{
-	font-weight: 100; 
-	font-family:  'Rix독립고딕_Pro Regular'
-}
-.title2:hover{
-	display:block;
-	background-color:  #ff8b72; transition: none;
-	cursor:pointer;
-}
 
 .jb-a{
 	
