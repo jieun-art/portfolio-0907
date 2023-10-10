@@ -37,25 +37,14 @@ h1, h2, h3, h4, h5, h6, p{
 	vertical-align: baseline;
 }
 	
-@font-face {
-  		font-family: 'speakyourmind';
-    	 src: local('speakyourmind'),
-         url('speakyourmind-Regular.woff2') format('woff2'), 
-         url('speakyourmind-Regular.woff') format('woff'),
-         url('speakyourmind-Regular.ttf') format('truetype'),
-         url('speakyourmind-Regular.eot') format('embedded-opentype');} 
+
 
  
 
-		html, body, h1, h2, h3, h4, h5, h6, li, p {font-family:'speakyourmind' !important;}
+
+
 	
-	@font-face{
-		font-family: 'sym';
-		src:url("img/font/speakyourmind-Regular.ttf");
-	}
-	
-	html, head, body{background-color: #424242; padding:0; margin:0; font-size: 90px;}
-	
+
 		.me{position:fixed; padding: 10px; top: 10px; left: 15px; opacity: 0.4;}
 
 		.main{position:fixed;  padding: 10px; top:31%;  left: 15px;}
@@ -65,7 +54,7 @@ h1, h2, h3, h4, h5, h6, p{
 		.bold{font-weight: bold;}
 	
 	body{
-		background-color: white;
+		background: white;
 		
 	}
 	
@@ -73,7 +62,30 @@ h1, h2, h3, h4, h5, h6, p{
 		float: left;
 	}
 	
-	
+	.copybody {
+    background: linear-gradient(to left, rgba(74,104,179,1), rgba(121,195,235,0.7),rgba(255,255,255,0.00));
+    max-width: 1200px;
+    width: 100%;
+    height: 37px;
+    z-index: 100;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+	color: white;
+}
+	.copy {
+    position: fixed;
+    z-index: 10;
+    height: 15px;
+    padding: 7px;
+    bottom: 10px;
+    transform: translateX(0);
+    opacity: 1;
+    filter: invert(100%)
+}
+
 	img {
     -webkit-user-drag: none;
 }
@@ -108,6 +120,7 @@ h1, h2, h3, h4, h5, h6, p{
 	.work{
 		max-width: 1200px;
 		margin:0 auto;
+		background-color: white;
 	}
 	
 	.nameBT {position: fixed; z-index: 10; height:15px;  padding: 7px; left: 50%; top: 10px; left: 2vw; opacity: 1; filter: invert(100%);}
@@ -151,7 +164,7 @@ h2{
 	.float3 {
     width: 33.33%;
     
-    background-color: white;
+    
     float: left;
     background-size: auto 500px;
     background-position: center;
@@ -171,7 +184,7 @@ h2{
 		
 		font-family: '-윤고딕320'; 
 		
-		background-color: white;
+		
 		padding:0px;
 		
 		}		
@@ -245,8 +258,8 @@ h2{
 		}
 	
 	.slide-pagelist > li > label {
-		border-top: 10px solid white;
-		border-bottom: 10px solid white;
+		border-top: 10px;
+		border-bottom: 10px ;
 		font-size: 0px;
 		display:block;
 		padding:1px 15px;
@@ -303,6 +316,14 @@ h2{
 </head>
 
 <body>
+		<div class="copybody">
+		<div style="transform: translateY(2px); text-align: right; font-size: 10pt;">
+		맡은 작업 (100%): 폰트 디자인, 소책자 제작, 목업&nbsp
+	</div>	
+		<div style="transform: translateY(2px); text-align: right; font-size: 5pt;">
+		(c) 2023. 김지은 all rights reserved.&nbsp
+	</div>	
+	</div>
 	<!-- 상단 버튼 -->	
 	<div class="workbody">
 	<div>
@@ -354,12 +375,12 @@ h2{
 			
 			</div>
 			
-			<a> <img src="./img/work01/w1block.png" style="width: 100%;"> </a>
-		<a> <img src="./img/work01/w1block.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work01/w1block.png" style="width: 100%; opacity: 0;"> </a>
+		<a> <img src="./img/work01/w1block.png" style="width: 100%; opacity: 0;"> </a>
 		<!--	<a> <img src="./img/work03/w33.png" style="width: 100%;"> </a> -->
 			<a> <img src="./img/work03/w34.png" style="width: 100%;"> </a>
 			<a> <img src="./img/work03/w35.png" style="width: 100%;"> </a>
-			<a> <img src="./img/work01/w1block.png" style="width: 50%;"> </a>
+			<a> <img src="./img/work01/w1block.png" style="width: 50%; opacity: 0;"> </a>
 			
 		
 		<!--
@@ -566,10 +587,10 @@ h2{
 		  </div>
 		
 		<!--///////////////////////////////-->
-		<a> <img src="./img/work01/w1block.png" style="width: 100%;"> </a>
+		<a> <img src="./img/work01/w1block.png" style="width: 100%; opacity: 0;"> </a>
 		<div style="max-width: 70%; margin: 0 auto;">
 			<a> <img src="./img/work03/w32.1.png" style="width: 100%; filter: invert(100)"> </a>
-			<a> <img src="./img/work01/w1block.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work01/w1block.png" style="width: 100%; opacity: 0;"> </a>
 			</div>
 		
 		

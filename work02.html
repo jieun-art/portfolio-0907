@@ -37,9 +37,13 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'sym';
     src: url("img/font/speakyourmind-Regular.ttf");
 }
+		img {
+    -webkit-user-drag: none;
+}
+	
 body {
     background-color: white;
-    font-family: 'Pretendard';
+    
 }
 .workbody {
     background: linear-gradient(to top, rgb(0, 0, 0, 0), rgba(255,255,255,0.53));
@@ -52,6 +56,29 @@ body {
     left: 50%;
     transform: translateX(-50%);
     top: 0;
+}
+	.copybody {
+    background: linear-gradient(to left, rgba(232,107,88,1.00), rgba(240,200,140,0.7),rgba(255,255,255,0.00));
+    max-width: 1200px;
+    width: 100%;
+    height: 37px;
+    z-index: 100;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+	color: white;
+}
+	.copy {
+    position: fixed;
+    z-index: 10;
+    height: 15px;
+    padding: 7px;
+    bottom: 10px;
+    transform: translateX(0);
+    opacity: 1;
+    filter: invert(100%)
 }
 .work {
     max-width: 1200px;
@@ -102,6 +129,7 @@ body {
     opacity: 1;
     filter: invert(100%)
 }
+
 p.bignumF {
     font-family: 'Cinzel', serif;
 }
@@ -171,6 +199,14 @@ p.bignumF {
 
 <body>
 	<!-- 상단 버튼 -->	
+	<div class="copybody">
+		<div style="transform: translateY(2px); text-align: right; font-size: 10pt;">
+		맡은 작업 (25%): 기획, 애니메이팅, 시네마틱 영상 후반부, 전시장 DP&nbsp&nbsp
+	</div>	
+		<div style="transform: translateY(2px); text-align: right; font-size: 5pt;">
+		(c) 2023. 김지은 all rights reserved.&nbsp&nbsp
+	</div>	
+	</div>
 	<div class="workbody">
 	<div>
 		<a href="index.html">
@@ -193,6 +229,7 @@ p.bignumF {
 		<img src="./img/resumeBT.png" class="cvBT">
 		
 	</div>
+		
 		</div>
 <div class="work"> 
 	<img src="./img/work02/w20.png" style="width: 100%;">
