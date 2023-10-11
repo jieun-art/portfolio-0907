@@ -1,0 +1,505 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+	<style>
+		
+
+	.nameBT {position: fixed; z-index: 10; height:15px;  padding: 7px; left: 50%; top: 10px; left: 2vw; opacity: 1; filter: invert(100%);}
+	.homeBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 6vw;transform: translateX(-190%);opacity: 1; filter: invert(100%);}
+	.workBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 4vw; transform: translateX(-105%);opacity: 1; filter: invert(100%)}
+	.cvBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 2vw; transform: translateX(0);opacity: 1; filter: invert(100%)}
+	p.bignumF{font-family: 'Cinzel', serif;}
+
+.nameBT:hover{
+	opacity: .5;
+}
+.homeBT:hover{
+	opacity: .5;
+}
+
+.workBT:hover{
+	opacity: .5;
+}
+
+.cvBT:hover{
+	opacity: .5;
+}
+		.BG {position: fixed; 
+			width: 100%; 
+			height: 100%;
+			z-index: 10; 
+			top: 0px;
+		background: linear-gradient(to top, rgb(0, 0, 0, 0),rgba(255,255,255,0.4));
+			
+		}
+		
+		
+		
+		.title {
+    font-weight: 100;
+    font-family: 'Rix독립고딕_Pro Regular', sans-serif;
+}
+.title2 {
+    font-weight: 100;
+    font-family: 'Rix독립고딕_Pro Regular', sans-serif;
+}
+.title3 {
+    font-weight: 100;
+    font-family: 'Rix독립고딕_Pro Regular', sans-serif;
+}
+.workbody {
+    background: linear-gradient(to top, rgb(0, 0, 0, 0), rgba(255,255,255,0.53));
+    max-width: 1300px;
+    width: 100%;
+    height: 100px;
+   
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+.work {
+    max-width: 1000px;
+    margin: 0 auto;
+    max-height: 577px;
+	background-color: rgba(252,0,4,0.0);
+	transform: translateY(52%);
+		}
+
+		.trialB{
+			position: relative;
+			z-index: 50;
+			width: 40%;
+			left: 5%;
+			height: auto;
+			content: url("./img/main/blueBox.png");
+			opacity: .0;
+			cursor: pointer;
+		}
+		
+		.trialG{
+			position: absolute;
+			z-index: 50;
+			left: 15%;
+			top: 81%;
+			width: 20%;
+			height: 100%;
+			content: url("./img/main/greenBox.png");
+			opacity: .0;
+			cursor: pointer;
+		}
+		.trialY{
+			position: absolute;
+			z-index: 51;
+			top: 20%;
+			left: 38%;
+			width: 24%;
+			height: 45%;
+			content: url("./img/main/yellowBox.png");
+			opacity: 0;
+			cursor: pointer;
+		}
+		.trialP{
+			position: absolute;
+			z-index: 50;
+			top: 10%;
+			left: 58%;
+			width:40%;
+			height: 100%;
+			content: url("./img/main/pinkBox.png");
+			opacity: .0;
+			cursor: pointer;
+		}
+		.trialO{
+			position: absolute;
+			z-index: 50;
+			top: 120%;
+			left: 63.5%;
+			width: 25%;
+			height: auto;
+			content: url("./img/main/orangeBox.png");
+			opacity: .0;
+			cursor: pointer;
+		}
+		.trialW{
+			position: absolute;
+			z-index: 50;
+			top: 88%;
+			left: 35%;
+			width: 23%;
+			height: 70%;
+			content: url("./img/main/whiteBox.png");
+			opacity: .0;
+			cursor: pointer;
+			filter: invert(100%);
+		}
+		.trialW2{
+			position: absolute;
+			z-index: 50;
+			top: 110%;
+			left: 57%;
+			width: 8%;
+			height: auto;
+			content: url("./img/main/whiteBox2.png");
+			opacity: .0;
+			cursor: pointer;
+			filter: invert(100%);
+		}
+	
+		.card{
+		position: absolute;
+			top: 0;
+			z-index: -4;
+			height: auto;
+			max-width:  1000px;
+			width: 100%;
+			
+			content: url("./img/main/cardMo_3x.png");
+		}
+		
+		.iconPico{
+			position: absolute;
+			z-index: 40;
+			top: 132%;
+			left: 63.2%;
+			width: 15%;
+			height: auto;
+			content: url("./img/main/iconPico_3x.png");
+			opacity: 1;
+		}
+		
+		.iconDino{
+			position: absolute;
+			z-index: 40;
+			top: 77%;
+			left: 19.8%;
+			width:21%;
+			height: auto;
+			content: url("./img/main/iconDinoH_3x.png");
+			opacity: 1;
+		}
+		
+		.iconDan{
+			position: absolute;
+			z-index: 40;
+			top: 62.6%;
+			left: 34.4%;
+			width:8.5%;
+			height: auto;
+			content: url("./img/main/iconDan_3x.png");
+			opacity: 1;
+		}
+		
+		.iconSim{
+			position: absolute;
+			z-index: 40;
+			top: 74.5%;
+			left: 58%;
+			width:9%;
+			height: auto;
+			content: url("./img/main/KakaoTalk_20230910_181028396.png");
+			opacity: 1;
+		}
+		.iconCrush{
+			position: absolute;
+			z-index: 40;
+			top: 07%;
+			left: 41.5%;
+			width:18%;
+			height: auto;
+			content: url("./img/main/iconCrush_3x.png");
+			opacity: 1;
+		}
+		
+		
+		.trial_back{
+		position: absolute;
+			top: 0;
+			z-index: -5;
+			max-width:  1000px;
+			width: 100%;
+			height: 230%;
+			content: url("./img/main/black_3x.png");
+			opacity: 0;
+		}
+		/* 영상 속성 변화 */
+		
+		.videoP{
+			display: none;
+			z-index: -10;
+		}
+		.videoB{
+			display: none;
+			z-index: -10;
+		}
+		.videoO{
+			display: none;
+			z-index: -10;
+		}
+		.videoY{
+			display: none;
+			z-index: -10;
+		}
+		
+		
+		.trialB:hover ~ .trial_back{
+			opacity: 0.3;
+		}
+		
+		.trialG:hover ~ .trial_back{
+			opacity: 0.3;
+			
+			
+		}
+		.trialY:hover ~ .trial_back{
+			opacity: 0.3;
+
+		}
+		
+		
+		.trialO:hover ~ .trial_back{
+			opacity: 0.3;
+			height: 239%;
+			
+		}
+		.trialP:hover ~ .trial_back{
+			opacity: 0.3;
+			
+		}
+		
+		
+		/* card 속성 변화 */
+		.trialB:hover ~ .card{
+			
+			content: url("./img/main/cardDan_3x.png");
+		}
+		.trialG:hover ~ .card{
+			
+			content: url("./img/main/cardDino_3x.png");
+		}
+		.trialY:hover ~ .card{
+			
+			content: url("./img/main/cardCrush_3x.png");
+		}
+		.trialP:hover ~ .card{
+			
+			content: url("./img/main/cardSim_3x.png");
+		}
+		.trialO:hover ~ .card{
+			
+			content: url("./img/main/cardPico_3x.png");
+		}
+		
+		.trialW:hover ~ .card{
+			
+			content: url("./img/main/cardBMo_3x.png");
+		}
+		.trialW2:hover ~ .card{
+			
+			content: url("./img/main/cardBMo_3x.png");
+		}
+
+		/* 영상 속성 변화 */
+		.trialP:hover ~ .videoP{
+			display: block;
+		}
+		.trialB:hover ~ .videoB{
+			display: block;
+		}
+		.trialO:hover ~ .videoO{
+			display: block;
+		}
+		.trialY:hover ~ .videoY{
+			display: block;
+		}
+		
+		/* 아이콘 속성 변화 */
+		.trialB:hover ~ .iconPico{
+			content: url("./img/main/iconPicoOff_3x.png");
+			opacity: 0;
+		}
+		.trialG:hover ~ .iconPico{
+			content: url("./img/main/iconPicoOff_3x.png");
+			opacity: 0;
+		}
+		.trialY:hover ~ .iconPico{
+			content: url("./img/main/iconPicoOff_3x.png");
+			opacity: 0;
+		}
+		.trialP:hover ~ .iconPico{
+			content: url("./img/main/iconPicoOff_3x.png");
+			opacity: 0;
+		}
+		.trialO:hover ~ .iconPico{
+			
+		}
+		/*000000000000000000000000000000*/
+		.trialB:hover ~ .iconDino{
+			content: url("./img/main/iconDinoOff_3x.png");
+			opacity: 0;
+		}
+		.trialG:hover ~ .iconDino{
+			
+		}
+		.trialY:hover ~ .iconDino{
+			content: url("./img/main/iconDinoOff_3x.png");
+			opacity: 0;
+		}
+		.trialP:hover ~ .iconDino{
+			content: url("./img/main/iconDinoOff_3x.png");
+			opacity: 0;
+		}
+		.trialO:hover ~ .iconDino{
+			content: url("./img/main/iconDinoOff_3x.png");
+			opacity: 0;
+		}
+		/*000000000000000000000000000000*/
+		.trialB:hover ~ .iconDan{
+			
+		}
+		.trialG:hover ~ .iconDan{
+			content: url("./img/main/iconDanOff_3x.png");
+			opacity: 0;
+		}
+		.trialY:hover ~ .iconDan{
+			content: url("./img/main/iconDanOff_3x.png");
+			opacity: 0;
+		}
+		.trialP:hover ~ .iconDan{
+			content: url("./img/main/iconDanOff_3x.png");
+			opacity: 0;
+		}
+		.trialO:hover ~ .iconDan{
+			content: url("./img/main/iconDanOff_3x.png");
+			opacity: 0;
+		}
+		/*000000000000000000000000000000*/
+		.trialB:hover ~ .iconSim{
+			content: url("./img/main/iconSimOff_3x.png");
+			opacity: 0;
+		}
+		.trialG:hover ~ .iconSim{
+			content: url("./img/main/iconSimOff_3x.png");
+			opacity: 0;
+		}
+		.trialY:hover ~ .iconSim{
+			content: url("./img/main/iconSimOff_3x.png");
+			opacity: 0;
+		}
+		.trialB:hover ~ .iconSim{
+			
+		}
+		.trialO:hover ~ .iconSim{
+			content: url("./img/main/iconSimOff_3x.png");
+			opacity: 0;
+		}
+		/*000000000000000000000000000000*/
+		.trialB:hover ~ .iconCrush{
+			content: url("./img/main/iconCrushOff_3x.png");
+			opacity: 0;
+		}
+		.trialG:hover ~ .iconCrush{
+			content: url("./img/main/iconCrushOff_3x.png");
+			opacity: 0;
+		}
+		.trialY:hover ~ .iconCrush{
+			
+		}
+		.trialP:hover ~ .iconCrush{
+			content: url("./img/main/iconCrushOff_3x.png");
+			opacity: 0;
+		}
+		.trialO:hover ~ .iconCrush{
+			content: url("./img/main/iconCrushOff_3x.png");
+			opacity: 0;
+		}
+			
+		@media (max-width: 500px){
+		.nameBT {position: fixed; z-index: 10; height:15px; left: 50%; top: 15px; left: 2vw;}
+		.homeBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 13vw;transform: translateX(-190%);}
+		.workBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 7vw; transform: translateX(-105%);}
+		.cvBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 1vw; transform: translateX(0);}
+		p.bignumF{font-family: 'Cinzel', serif;}
+		
+			
+			
+	}
+		
+	</style>
+</head>
+
+<body>
+	<!-- 상단 버튼 -->	
+	<div class="workbody">
+	<div>
+		<a href="index.html">
+		<img src="./img/name.png" class="nameBT" >
+		</a>
+	</div>
+	
+	<div>
+		<a href="index.html">
+		<img src="./img/homeBT.png" class="homeBT">
+		</a>
+	</div>
+	<div>
+		<a href="index.html">
+		<img src="./img/workBT.png" class="workBT">
+		</a>
+	</div>	
+	<div>
+		
+		<img src="./img/resumeBT.png" class="cvBT">
+		
+	</div>
+		</div>
+	
+
+	<div class="work">
+	<div class="trialB" onclick="location.href='work01.html';" ></div>
+		<div class="trialG" onclick="location.href='workDino.html';"></div>
+		<div class="trialY" onclick="location.href='workCrush.html';"></div>
+		<div class="trialP" onclick="location.href='workSim.html';"></div>
+		<div class="trialO" onclick="location.href='work02.html';" ></div>
+		<div class="trialW" onclick="location.href='work.html';"  ></div>
+		<div class="trialW2" onclick="location.href='work.html';"  ></div>
+		<div class="card"  ></div>
+		<div class="iconPico" ></div>
+		<div class="iconDino" ></div>
+		<div class="iconDan" ></div>
+		<div class="iconSim" ></div>
+		<div class="iconCrush" ></div>
+		<div class="trial_back" ></div>
+		
+		<video muted autoplay loop style="position: absolute; width: 100%; max-width: 1300px; top: 0;" class ="videoP">
+      <source src="img/workSim/intro.mp4" type="video/mp4">
+      <strong>Your browser does not support the video tag.</strong>
+    </video>
+		<video muted autoplay loop style="position: absolute; width: 100%; max-width: 1300px; top: 0;" class ="videoB">
+      <source src="img/work01/final_sound_3.mp4" type="video/mp4">
+      <strong>Your browser does not support the video tag.</strong>
+    </video>
+		
+      <video muted autoplay loop style="position: absolute; width: 100%; max-width: 1300px; top: 0;" class ="videoO">
+      <source src="img/work02/PICOVID 2037.mp4" type="video/mp4">
+      <strong>Your browser does not support the video tag.</strong>
+    </video>
+		<video muted autoplay loop style="position: absolute; width: 100%; max-width: 1300px; top: 0;" class ="videoY">
+      <source src="img/workCrush/movieCrush02.mp4" type="video/mp4">
+      <strong>Your browser does not support the video tag.</strong>
+    </video>
+		
+		
+	</div>
+	
+
+
+	
+</body>
+	
+
+</html>
+
